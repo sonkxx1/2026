@@ -1,7 +1,12 @@
-for p in range(16,37):
-    num1= int('17496', p)
-    num2 = int('91f83', p)
-    num3 = int('D9543', p)
-    num= num1+num2+num3
-    if num %12 ==0:
-        print(num//12)
+def convert (num, sys):
+    res = ''
+    while num:
+        res += str(num % sys)
+        num //= sys
+    return res[::-1]
+
+num = 4*625**9 - 25*15 + 2*5**11 - 7
+
+print(convert(num,5).count('4'))
+
+
