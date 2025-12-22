@@ -1,4 +1,4 @@
-from itertools import permutations
+ from itertools import permutations
 
 graph ='AF FE EC CG GD DB BA FB ED'.split()
 matrix = '256 134 267 27 16 135 34 '.split()
