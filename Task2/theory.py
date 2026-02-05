@@ -17,7 +17,7 @@
 # 9. and
 # 10. or
 #
- print('x y z w')
+print('x y z w')
 for x in range(2):
     for y in 0, 1:
         for z in (0,1):
@@ -31,3 +31,18 @@ for x in range(2):
                     print(x, y, z, w)
                 # строки вперемешку
                 print(x, y,z,w)
+
+# args
+def f1(a, b, c):
+    return a + b + c
+
+test1 =[1,2,3]
+print(f1(*test1))
+
+
+#kwargs
+def f2(a,b):
+    return a / b
+
+test2 ={'a':5,'b':2}
+print(f2(**test2))
