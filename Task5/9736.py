@@ -6,8 +6,8 @@ for N in range (1,100_000):
     else:
         R = R + bin(N%3*3)[2:]
     R = int(R,2)
-    if R <=170:
-        ans.append(R)
+    if R <130:
+        ans.append(N)
 
-print(max(ans))
+print(ans)
 
