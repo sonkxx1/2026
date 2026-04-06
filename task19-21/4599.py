@@ -11,3 +11,4 @@ def f(x, y, s):
 print('19)', [x for x in range(1, 242) if f(x, 17, 2)])  # 61
 print('20)', [x for x in range(1, 242) if f(x, 17, 3) and not f(x, 17, 1)])
 print('21)', [x for x in range(1, 242) if f(x, 17, 4) and not f(x, 17, 2)])
+
